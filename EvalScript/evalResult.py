@@ -151,8 +151,14 @@ def get_observed(observed):
 
     return observations
 
+def calculateFscore(prec, rec):
+    if abs(prec + rec ) < 1e-6:
+        return 0.
+    return 2 * prec * rec / (prec + rec)
+
 #Print Results and deal with division by 0
-def printResult(evalTarget, num_correct, prec, rec):
+def printSingleResult(evalTarget, num_correct, prec, rec):
+    f = calculateFscore(prec, rec)
     if abs(prec + rec ) < 1e-6:
         f = 0
     else:
@@ -161,6 +167,20 @@ def printResult(evalTarget, num_correct, prec, rec):
     print(evalTarget, ' precision: %.4f' % (prec))
     print(evalTarget, ' recall: %.4f' %   (rec))
     print(evalTarget, ' F: %.4f' % (f))
+
+def printResult(total_observed, total_predicted, correct_entity, correct_sentiment):
+    print('#Entity in gold data: %d' % (total_observed))
+    print('#Entity in prediction: %d' % (total_predicted))
+    print()
+
+    prec = correct_entity/total_predicted
+    rec = correct_entity/total_observed
+    printSingleResult('Entity', correct_entity, prec, rec)
+    print()
+
+    prec = correct_sentiment/total_predicted
+    rec = correct_sentiment/total_observed
+    printSingleResult('Sentiment',correct_sentiment, prec, rec)
 
 #Compare results bewteen gold data and prediction data
 def compare_observed_to_predicted(observed, predicted):
@@ -204,18 +224,7 @@ def compare_observed_to_predicted(observed, predicted):
                     if span_sent == sent:
                         correct_sentiment += 1
 
-    print('#Entity in gold data: %d' % (total_observed))
-    print('#Entity in prediction: %d' % (total_predicted))
-    print()
-
-    prec = correct_entity/total_predicted
-    rec = correct_entity/total_observed
-    printResult('Entity', correct_entity, prec, rec)
-    print()
-
-    prec = correct_sentiment/total_predicted
-    rec = correct_sentiment/total_observed
-    printResult('Sentiment',correct_sentiment, prec, rec)
+    return total_observed, total_predicted, correct_entity, correct_sentiment
 
 
 ##############Main Function##################
@@ -230,7 +239,7 @@ def evaluate(gold, prediction):
             predicted = get_predicted(prediction_f)
 
             #Compare
-            compare_observed_to_predicted(observed, predicted)
+            return compare_observed_to_predicted(observed, predicted)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
@@ -239,4 +248,4 @@ if __name__ == "__main__":
         print ("Usage on Linux/Mac:  python3 evalResult.py gold predictions")
         sys.exit()
 
-    evaluate(sys.argv[1], sys.argv[2])
+    printResult(evaluate(sys.argv[1], sys.argv[2]))
