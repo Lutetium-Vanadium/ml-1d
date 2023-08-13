@@ -87,7 +87,7 @@ ofrecernos O
 la O
 carta O
 de O
-menús O
+menús B-positive
 nos O
 dan O
 la O
@@ -106,7 +106,7 @@ que O
 preguntamos O
 por O
 los O
-menús O
+menús B-positive
 , O
 que O
 entonces O
@@ -116,7 +116,7 @@ las O
 excelencias O
 de O
 sus O
-menús O
+menús B-positive
 , O
 que O
 no O
@@ -416,7 +416,7 @@ volveremos O
 ! O
 
 la O
-terraza O
+terraza B-positive
 con O
 sillas O
 de O
@@ -677,7 +677,7 @@ trabajado O
 pasando O
 por O
 unos O
-pescados O
+pescados B-positive
 en O
 su O
 punto O
@@ -685,7 +685,7 @@ justo O
 o O
 irte O
 a O
-menús O
+menús B-positive
 mas O
 elaborados O
 , O
@@ -1522,7 +1522,7 @@ muy O
 tranquilo O
 , O
 muy O
-limpio O
+limpio B-positive
 , O
 los O
 platos O
@@ -1738,7 +1738,7 @@ la O
 carne B-positive
 y O
 los O
-pescados O
+pescados B-positive
 . O
 
 Para O
@@ -2650,7 +2650,7 @@ y I-negative
 foie I-negative
 , O
 los O
-calçots O
+calçots B-positive
 y O
 la O
 carne B-positive
@@ -2958,7 +2958,7 @@ mes O
 , O
 no O
 habia O
-genero O
+genero B-positive
 , O
 faltaba O
 de O
@@ -3672,7 +3672,7 @@ Nos O
 pusieron O
 en O
 la O
-terraza O
+terraza B-positive
 , O
 sin O
 avisar O
@@ -3931,7 +3931,7 @@ encantado O
 El O
 corte O
 del O
-jamon O
+jamon B-positive
 en O
 lonchas O
 mas O
@@ -4080,7 +4080,7 @@ es O
 Saludos O
 
 La O
-mariscada O
+mariscada B-positive
 imperial O
 es O
 excelente O
@@ -4129,7 +4129,7 @@ pega O
 creo O
 q O
 la O
-iluminación O
+iluminación B-neutral
 ( O
 2º O
 piso O
@@ -4141,7 +4141,7 @@ fuerte O
 podrían O
 poner O
 una O
-luz O
+luz B-positive
 más O
 suave O
 o O
@@ -4789,9 +4789,9 @@ falla O
 ! O
 
 El O
-bacalao O
-al O
-horno O
+bacalao B-positive
+al I-positive
+horno I-positive
 ( O
 especialidad O
 de O

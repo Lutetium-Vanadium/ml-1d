@@ -11,9 +11,8 @@
   calling it within python code and not requiring it to be run through
   the terminal. However, it can still be run as a script.
 
-In addition to the `main` branch, other approaches for part 4 which
-exist in other branches. Please check the report for which branch to
-use.
+In addition to the `main` branch, other approaches for part 4 exist in
+other branches. Please check the report for which branch to use.
 
 ## Dependencies
 

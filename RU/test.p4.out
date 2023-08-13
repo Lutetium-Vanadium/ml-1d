@@ -192,9 +192,9 @@
 ресторане O
 негромкая O
 , O
-обстановка B-positive
-располагает O
-к O
+обстановка B-neutral
+располагает I-neutral
+к I-neutral
 общению O
 . O
 
@@ -444,8 +444,8 @@
 из I-positive
 свинины I-positive
 , O
-свинину O
-с O
+свинину B-positive
+с I-positive
 моцареллой O
 и O
 грибами O
@@ -1708,7 +1708,7 @@ S O
 
 Мои O
 любимые O
-суши O
+суши B-positive
 в O
 городе O
 . O
@@ -1883,8 +1883,8 @@ S O
 , O
 оказалось O
 что O
-сотрудники B-positive
-зала I-positive
+сотрудники B-negative
+зала I-negative
 ничего O
 об O
 этой O
@@ -2377,7 +2377,7 @@ S O
 романтическая O
 . O
 
-Официантка B-positive
+Официантка B-negative
 следила O
 за O
 столом O
@@ -2494,7 +2494,7 @@ S O
 меню I-positive
 . O
 
-Кофе O
+Кофе B-positive
 , O
 чай O
 с O
@@ -2596,12 +2596,12 @@ P O
 
 Очень O
 вкусное O
-горячее O
-блюдо O
-- O
-дорадо O
-с O
-овощами O
+горячее B-positive
+блюдо I-positive
+- I-positive
+дорадо I-positive
+с I-positive
+овощами I-positive
 ! O
 ! O
 ! O
@@ -2641,10 +2641,10 @@ P O
 многовато O
 . O
 
-Салат B-positive
-с I-positive
-малосольным I-positive
-лососем I-positive
+Салат B-neutral
+с I-neutral
+малосольным I-neutral
+лососем I-neutral
 , O
 тоже O
 был O
@@ -3024,7 +3024,7 @@ P O
 какой O
 , O
 но O
-вид O
+вид B-positive
 все O
 прощает O
 , O
@@ -3668,7 +3668,7 @@ NAVEX O
 вентиляции O
 . O
 
-Официантка B-positive
+Официантка B-negative
 вежливая O
 очень O
 . O
@@ -4347,7 +4347,7 @@ myfant.ru O
 за O
 обслуживание B-positive
 нашей O
-официантке B-positive
+официантке B-negative
 ( O
 к O
 сожалению O
@@ -5269,7 +5269,7 @@ myfant.ru O
 приятно O
 удивились O
 , O
-столы O
+столы B-positive
 были O
 не O
 пустые O
@@ -5441,8 +5441,8 @@ myfant.ru O
 и O
 хорошо O
 знает O
-состав O
-блюд O
+состав B-negative
+блюд I-negative
 , O
 что O
 не O
@@ -5699,7 +5699,7 @@ myfant.ru O
 . O
 
 Работа O
-официантов B-positive
+официантов B-negative
 была O
 незаметна O
 , O
@@ -6274,8 +6274,8 @@ S O
 не O
 выдержали O
 бы O
-блюда O
-из O
+блюда B-positive
+из I-positive
 традиционных O
 Питерских O
 сетевых O
